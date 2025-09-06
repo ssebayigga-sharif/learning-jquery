@@ -6,9 +6,20 @@ import reportWebVitals from "./reportWebVitals";
 import Names from "./Names.tsx";
 import Show from "./Show.tsx";
 import Delay from "./Delay.tsx";
+import Cope from "./Cope.tsx";
+import Usingcall from "./Usingcall.tsx";
+import Shed from "./Shed.tsx";
+import New from "./New.tsx";
+import Replace from "./Replace.tsx";
+import Remove from "./Remove.tsx";
+import Detach from "./Detach.tsx";
+import Slideshow from "./Slideshow.tsx";
+import Change from "./Change.tsx";
+import Addclass from "./Addclass.tsx";
+import Datachange from "./Datachange.tsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Delay />);
+root.render(<Datachange />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

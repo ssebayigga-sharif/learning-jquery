@@ -1,0 +1,22 @@
+$me : green;
+h1 {
+    color : $me;
+}
+$my : #803e00;
+h2 {
+    color : $my;
+}
+$met : rgb(38, 0, 128);
+h3 {
+    color : $met;
+}
+$mem : hwb(0 5% 4%);
+p {
+    color : $mem;
+}
+.it {
+    width: 20vw;
+    height: 20vw;
+    align-items: center;
+    display: flex;
+}
