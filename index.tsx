@@ -17,9 +17,13 @@ import Slideshow from "./Slideshow.tsx";
 import Change from "./Change.tsx";
 import Addclass from "./Addclass.tsx";
 import Datachange from "./Datachange.tsx";
+import Retrievecontent from "./Retrievecontent.tsx";
+import Eventz from "./Eventz.tsx";
+import Hoverz from "./Hoverz.tsx";
+import Entermouse from "./Entermouse.tsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Datachange />);
+root.render(<Entermouse />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
