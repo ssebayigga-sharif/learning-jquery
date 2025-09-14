@@ -1,12 +1,20 @@
 import jQuery from "jquery";
 import "./Entermouse.scss";
 function Entermouse() {
-  jQuery(".h").hover(
+  //   jQuery(".h").mouseenter(() => {
+  //     jQuery(".h").stop().fadeTo(500, 0.4);
+  //   });
+  //   jQuery(".h").mouseleave(() => {
+  //     jQuery(".h").stop().fadeTo(500, 1);
+  // });
+
+  let awesome = jQuery(".h");
+  awesome.hover(
     function () {
-      jQuery(this).stop().fadeTo(500, 0.4);
+      jQuery(".h").stop().fadeTo(500, 0.4);
     },
     function () {
-      jQuery(this).stop().fadeTo(500, 1);
+      jQuery(".h").stop().fadeTo(500, 1);
     }
   );
   return (

@@ -21,9 +21,14 @@ import Retrievecontent from "./Retrievecontent.tsx";
 import Eventz from "./Eventz.tsx";
 import Hoverz from "./Hoverz.tsx";
 import Entermouse from "./Entermouse.tsx";
+import Multiple from "./Multiple.tsx";
+import Boom from "./Boom.tsx";
+import delegat from "./Delegat.tsx";
+import Delegat from "./Delegat.tsx";
+import Focusblur from "./Focusblur.tsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Entermouse />);
+root.render(<Focusblur />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
