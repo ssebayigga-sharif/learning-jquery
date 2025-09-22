@@ -26,9 +26,14 @@ import Boom from "./Boom.tsx";
 import delegat from "./Delegat.tsx";
 import Delegat from "./Delegat.tsx";
 import Focusblur from "./Focusblur.tsx";
+import Ajjax from "./Ajjax.tsx";
+import Submitt from "./Submitt.tsx";
+import Activity from "./Activity.tsx";
+import fastfeed from "./Fastfeed.tsx";
+import Fastfeed from "./Fastfeed.tsx";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Focusblur />);
+root.render(<Fastfeed />);
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
