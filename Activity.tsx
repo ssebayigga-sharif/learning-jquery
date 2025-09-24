@@ -6,7 +6,7 @@ function Activity() {
       let names = jQuery("#tex").val() as string;
       let passWord = jQuery("#pass").val() as string;
       let textArea = jQuery("#message").val() as string;
-      let checkBox: Boolean = jQuery("#box").is(":checked");
+      let checkBox = jQuery("#box").is(":checked");
       validateNameField(names, event);
       validatePasswordField(passWord, event);
       validateTextArea(textArea, event);
@@ -37,7 +37,7 @@ function Activity() {
       if (!isValidatePassword(passWord)) {
         jQuery("#pass-feedback").text("please enter a valid password");
       } else {
-        jQuery("pass-feedback").text("");
+        jQuery("#pass-feedback").text("");
       }
     }
     //the textarea field
@@ -52,14 +52,15 @@ function Activity() {
       }
     }
     //the checkbox field
-    function isValidCheckBox(checkbox: string): Boolean {
-      return checkbox === ":checked";
+    function isValidCheckBox(checkbox: boolean): Boolean {
+      return checkbox === true;
     }
-    function validateCheckBox(checkBox: string, event: JQuery.SubmitEvent) {
+    function validateCheckBox(checkBox: boolean, event: JQuery.SubmitEvent) {
       if (!isValidCheckBox(checkBox)) {
         jQuery("#box-feedback").text(
           "please agree to the terms and conditions"
         );
+        event.preventDefault();
       } else {
         jQuery("box-feedback").text("");
       }
